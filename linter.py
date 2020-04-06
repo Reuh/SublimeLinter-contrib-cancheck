@@ -3,7 +3,7 @@
 from SublimeLinter.lint import Linter
 
 
-class Luacheck(Linter):
+class Cancheck(Linter):
     cmd = 'cancheck - --formatter=plain --codes --ranges --filename ${file}'
     regex = (
         r'^.+:(?P<line>\d+):(?P<col>\d+)\-(?P<col_end>\d+): '
